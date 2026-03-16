@@ -1,0 +1,258 @@
+.card-slider{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.card-slider__number-group--hidden {
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+}
+
+.card-slider__number-group--visible {
+    visibility: visible;
+    position: static;
+}
+.card-slider__number-group {
+    display: inline-block;
+    word-spacing: 1em;
+    /* letter-spacing: 2px; */
+    /* font-size: 1.1em; */
+}
+
+.card-slider__toggle--absolute {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.18);
+    color: #222;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-slider__show-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.card-slider__list--slider {
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card-slider__slide {
+    /* min-width: 100%; */
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    scroll-snap-align: start;
+    /* height: 10em; */
+}
+
+.card-slider__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.card-slider__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card-slider__dot--active {
+    background: #22c55e;
+    width: 30px;
+    border: none;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.card-slider {
+    margin-top: 24px;
+}
+
+.card-slider__list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+}
+
+.card-slider__toggle {
+    position: absolute;
+    height: 20%;
+    top: -10%;
+    right: 2.5%;
+
+
+    z-index: -1;
+    color: var(--color-tertiary) !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 4px;
+    font-size: 0.75rem;
+    border: none;
+    /* border: 2px solid red; */
+    /* margin-top: 8px; */
+    padding: 8px 10px;
+    background: white;
+    /* border: 2px solid red; */
+    /* border-radius: 12px; */
+    color: white;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px ;
+
+    /* font-size: 12px; */
+}
+
+.card-card__logo_name {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+}
+
+.card-slider__logo {
+    width: 6rem;
+}
+
+.card-slider__item {
+    /* background: white; */
+    border: none;
+    border-radius: 16px;
+    color: white;
+    /* padding: 18px; */
+    /* margin: 2em; */
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* width is set inline via style for fractional slides */
+}
+
+.card-slider__item:hover {
+    transform: translateY(-3px);
+    /* box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18); */
+}
+
+.card-slider__item--active {
+    /* box-shadow: 0 16px 32px rgba(0, 0, 0, 0.22); */
+}
+
+.card-slider__item--frozen {
+    opacity: 0.5;
+}
+
+.card-slider__inner {
+    border: none;
+    border-radius: 15px;
+    height: 90%;
+    padding: 2em;
+    box-sizing: border-box;
+    background: var(--color-tertiary);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 5%; */
+    /* border: 2px solid red; */
+    gap: 2em;
+}
+
+.card-slider__name {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.card-slider__number {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    gap: 1em;
+}
+
+.card-slider__meta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3em;
+    font-size: 0.8125rem;
+    font-weight: 800;
+    opacity: 0.9;
+    
+}
+.card-slider__visa_logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.card-slider__visa_logo-img{
+    width: auto;
+}
+.card-slider__status {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+
+.card-slider__loading,
+.card-slider__empty {
+    padding: 18px;
+    background: #f0f2f7;
+    border-radius: 14px;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 1199.95px) {
+    .card-slider__toggle{
+        display: flex;
+        align-items: center;
+            justify-content: center;
+        position: static;
+        width: 50%;
+        border-radius: 12px 12px 0px 0px;
+        padding: 0;
+        
+    }
+    .card-slider__inner {
+         border-radius: 15px 0px 15px 15px;
+         gap: 0.5em;
+    }
+    .card-slider__name{
+        font-size: 1rem;
+    }
+    .card-slider__list{
+        gap: 16px;
+    }
+}

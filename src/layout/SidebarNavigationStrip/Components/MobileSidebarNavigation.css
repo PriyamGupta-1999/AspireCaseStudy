@@ -1,0 +1,118 @@
+.mobile-sidebar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 64px;
+  background: #fff;
+  box-shadow: 0 -2px 8px rgba(15,23,42,0.06);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bcbcbc;
+}
+
+.mobile-sidebar__list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-sidebar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #bdbdbd;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mobile-sidebar__link--active {
+  color: #01D167;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+.mobile-sidebar__icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 2px;
+  filter: grayscale(1) opacity(0.5);
+}
+
+.mobile-sidebar__link--active .mobile-sidebar__icon {
+  filter: none;
+}
+
+.mobile-sidebar__label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.mobile-sidebar__link--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media (min-width: 1200px) {
+  .mobile-sidebar {
+    display: none;
+  }
+}
+.mobile-sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: rgba(255, 255, 255, 0.95); */
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+  display: none;
+  z-index: 20;
+}
+
+.mobile-sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.mobile-sidebar__link {
+
+  font-size: 12px;
+  color: #2f2f40;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+
+}
+
+.mobile-sidebar__link--active {
+  background: rgba(10, 78, 176, 0.12);
+  color: #0a4eb0;
+}
+
+@media (max-width: 768px) {
+  .mobile-sidebar {
+    display: block;
+  }
+}

@@ -1,0 +1,35 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f7fa;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.app-main {
+  width: 70%;
+  height: 100%;
+  overflow: auto;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* @media (max-width: 768px) {
+  .app-main {
+    padding: 16px;
+  }
+} */
+@media (max-width:1199.95px){
+    .app-layout{
+    background: var(--color-background);
+    }
+    .app-main {
+        width: 100%;
+        padding: 0em;
+    }
+
+}

@@ -1,0 +1,343 @@
+/* Accordion styles for RecentTransaction to match CardDetails */
+.recent-transactions-accordion__container {
+  background: #f4f8fe;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+  border: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.recent-transactions-accordion__summary {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 24px;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 12px;
+}
+
+
+.recent-transactions-accordion__summary-content {
+  display: flex;
+  align-items: center;
+}
+
+.recent-transactions-accordion__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.recent-transactions-accordion__summary-title {
+  color: #0C365A;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.recent-transactions-accordion__arrow {
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+  transition: transform 0.2s;
+}
+
+.recent-transactions-accordion__content {
+  /* padding: 0 24px 18px 24px; */
+}
+.recent-transactions--card {
+  background: #f4f8fe;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+  border: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.recent-transactions__header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px 0 24px;
+}
+
+.recent-transactions__header-row--accordion {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 18px 24px 0 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s;
+}
+
+
+
+.recent-transactions__header-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.recent-transactions__header-icon {
+  width: 24px;
+  height: 24px;
+}
+.recent-transactions__header-title {
+  color: #0C365A;
+  font-size: 16px;
+  font-weight: 600;
+}
+.recent-transactions__header-arrow {
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+  transition: transform 0.2s;
+}
+
+.recent-transactions__header-row[aria-expanded="true"] .recent-transactions__header-arrow {
+  transform: rotate(180deg);
+}
+
+
+.recent-transactions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+}
+.recent-transactions__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  /* padding: 18px 0 18px 0;
+   */
+   /* padding: 1rem 2rem; */
+  border-bottom: 1px solid #f0f2f7;
+}
+.recent-transactions__item:last-child {
+  border-bottom: none;
+}
+.recent-transactions__item-avatar {
+  width: 10%;
+  aspect-ratio: 1/1;
+  /* height: 100%; */
+  /* height: 3.5rem; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f9f0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.recent-transactions__item-amount_item-row_amount{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    /* width: 20%; */
+}
+.recent-transactions__item-next-icon{
+    width: 0.5rem;
+    height: 0.8rem;
+    margin-left: 8px;
+    opacity: 0.6;
+}
+.recent-transactions__item-icon {
+  width: 60%;
+  aspect-ratio: 1/1;
+  /* height: 80%;
+   */
+}
+.recent-transactions__item-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.recent-transactions__item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent-transactions__item-title {
+  font-weight: 500;
+  color: #222;
+  font-size: 0.875rem;
+
+
+}
+.recent-transactions__item-desc-img{
+    width:  1.5rem;;
+    /* height: 16px; */
+    aspect-ratio: 4/3;
+    margin-right: 4px;
+    background: var(--color-background);
+    padding: 0.4em;
+    border-radius: 10px;
+}
+.recent-transactions__item-amount {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.recent-transactions__item-amount--debit {
+  color: #222;
+}
+.recent-transactions__item-amount--credit {
+  color: #01D167;
+}
+.recent-transactions__item-row--meta {
+  font-size: 12px;
+  color: #8d97a6;
+  margin-top: 2px;
+}
+.recent-transactions__item-status {
+  color: #0C365A;
+  font-weight: 500;
+}
+.recent-transactions__item-row--desc {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 13px;
+  color: #0C365A;
+  margin-top: 2px;
+}
+
+.recent-transactions__item-date{
+    font-size: 0.8125rem;
+}
+.recent-transactions__cta-row {
+  padding: 0 0 0 0;
+  /* margin-top: 8px; */
+  background: #e9fef3;
+  border-radius: 0 0 16px 16px;
+  text-align: center;
+}
+.recent-transactions__item-desc{
+    color: var(--color-background);
+    font-size: 0.75rem;
+}
+
+.recent-transactions__item-amount .recent-transactions__item-amount--debit{
+    color: #222222;
+    font-size: 0.875rem;
+    }
+.recent-transactions__cta {
+  background: none;
+  border: none;
+  color: #01D167;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 18px 0;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  cursor: pointer;
+}
+.recent-transactions {
+  padding: 18px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  margin-top: 16px;
+}
+
+.recent-transactions__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.recent-transactions__header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.recent-transactions__view-all {
+  padding: 8px 12px;
+  border: none;
+  background: rgba(11, 30, 58, 0.08);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.recent-transactions__list {
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+  /* border: 1px solid #F0F0F0; */
+  /* border-radius: 12px; */
+}
+
+.recent-transactions__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0rem;
+  border: 0px 0px 1px solid rgba(15, 23, 42, 0.05) 0px;
+  /* border-radius: 12px; */
+  /* background: rgba(243, 244, 246, 0.75); */
+}
+
+.recent-transactions__details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.recent-transactions__name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.recent-transactions__date {
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.recent-transactions__amount {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.recent-transactions__amount--debit {
+  color: #d14343;
+}
+
+.recent-transactions__amount--credit {
+  color: #067d3b;
+}
+
+.recent-transactions__empty {
+  padding: 12px;
+  color: rgba(15, 23, 42, 0.7);
+  text-align: center;
+}
+
+
+@media (max-width: 1199.95px) {
+.recent-transactions-accordion__container {
+    margin: 0em 1em;
+}
+}
