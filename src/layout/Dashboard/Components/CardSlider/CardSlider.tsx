@@ -5,7 +5,7 @@ import './CardSlider.css'
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
 import AspireLogo1x from '../../../../assets/Aspire Logo-1@2x.png'
-import VisaLogo from '../../../../assets/Visa Logo.png'
+import VisaLogo from '../../../../assets/VisaLogo.png'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
 function maskCardNumber(cardNumber: string) {
