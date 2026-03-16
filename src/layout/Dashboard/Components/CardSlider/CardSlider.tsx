@@ -3,7 +3,7 @@ import { useAppContext } from '../../../../app/providers/AppProvider'
 
 import './CardSlider.css'
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import HomeIcon from '../../../../assets/Home.png'
+
 import AspireLogo1x from '../../../../assets/Aspire Logo-1@2x.png'
 import VisaLogo from '../../../../assets/visa Logo.png'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -20,7 +20,7 @@ function formatCardNumber(cardNumber: string) {
 
 export default function CardSlider({ CARDS_PER_SLIDE = 1 }: { CARDS_PER_SLIDE: number }) {
     const {
-        state: { cards, user, cardIds, selectedCardId, loading },
+        state: { cards, cardIds, loading },
         dispatch,
     } = useAppContext()
 
@@ -60,7 +60,7 @@ export default function CardSlider({ CARDS_PER_SLIDE = 1 }: { CARDS_PER_SLIDE: n
         if (sliderRef.current) {
             const slideWidth = sliderRef.current.offsetWidth
             const idx = Math.round(sliderRef.current.scrollLeft / slideWidth)
-            console.log('idx', idx)
+         //   console.log('idx', idx)
             setCurrentSlide(idx)
             if (cardList[idx]) {
                 dispatch({ type: 'SELECT_CARD', payload: cardList[idx].id });

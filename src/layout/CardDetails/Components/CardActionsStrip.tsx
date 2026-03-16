@@ -21,7 +21,7 @@ export default function CardActionsStrip() {
   const [isFrozen, setIsFrozen] = useState(card?.isCardFreezed || false);
 //   const isFrozen = card?.isCardFreezed;
 
-  console.log('card',card,selectedCardId);
+ // console.log('card',card,selectedCardId);
   useEffect(()=>{
     setIsFrozen(card?.isCardFreezed || false);
   },[selectedCardId])

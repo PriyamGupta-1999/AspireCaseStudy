@@ -2,7 +2,7 @@ import { useAppContext } from '../../../app/providers/AppProvider'
 import { DASHBOARD_TABS } from '../../../shared/constants/Constants'
 import { Tabs, Tab } from '@mui/material'
 import { useState } from 'react'
-import { SyntheticEvent } from 'react'
+import type { SyntheticEvent } from 'react'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
 export default function DashboardTabs() {
